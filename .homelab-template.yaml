@@ -22,7 +22,7 @@ namespace: actualbudget
 pvc: true
 pvcAccessMode: ReadWriteMany
 pvcName: actualbudget
-pvcSize: 5Gi
+pvcSize: 1Gi
 pvcStorageClass: nfs-critical
 reloader: false
 resources:

@@ -4,11 +4,14 @@ kind: PersistentVolumeClaim
 metadata:
   name: actualbudget
   namespace: actualbudget
+  labels:
+    recurring-job.longhorn.io/source: enabled
+    recurring-job.longhorn.io/actualbudget: enabled
 spec:
   accessModes:
   - ReadWriteMany
   resources:
     requests:
-      storage: 5Gi
+      storage: 1Gi
   storageClassName: nfs-critical
   volumeMode: Filesystem
