@@ -1,0 +1,23 @@
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: actualbudget
+  annotations:
+    external-dns.alpha.kubernetes.io/hostname: ynab.crt.house
+spec:
+  ingressClassName: nginx-internal
+  rules:
+    - host: "ynab.crt.house"
+      http:
+        paths:
+          - path: "/"
+            pathType: Prefix
+            backend:
+              service:
+                name: actualbudget
+                port:
+                  number: 5006
+  tls:
+    - hosts:
+      - ynab.crt.house

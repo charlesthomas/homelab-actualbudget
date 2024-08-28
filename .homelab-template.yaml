@@ -1,0 +1,45 @@
+_commit: v1.8.2-4-g02b6330
+_src_path: /Users/crthomas/code/charlesthomas/homelab-template
+additionalResources: ''
+backups: true
+helm: false
+homepageDescription: ''
+homepageEnabled: true
+homepageGroup: Tools
+homepageIcon: actual
+homepageName: Actual Budget
+ingClass: nginx-internal
+ingCname: ''
+ingExtraAnnotations: ''
+ingHost: ynab.crt.house
+ingName: actualbudget
+ingPathType: Prefix
+ingWebSockets: false
+ingress: true
+labels: 'app: actualbudget'
+name: actualbudget
+namespace: actualbudget
+pvc: true
+pvcAccessMode: ReadWriteMany
+pvcName: actualbudget
+pvcSize: 5Gi
+pvcStorageClass: nfs-critical
+reloader: false
+resources:
+- backups.yaml
+- deployments.yaml
+- ingresses.yaml
+- pvcs.yaml
+- services.yaml
+service: true
+serviceAccount: true
+svcAccountName: actualbudget
+svcName: actualbudget
+svcPortName: http
+svcPortNum: 5006
+svcProtocol: TCP
+svcSelector: 'app: actualbudget'
+svcTargetPort: http
+svcType: ClusterIP
+upstreamURL: https://actualbudget.org/
+url: https://github.com/charlesthomas/homelab-actualbudget
