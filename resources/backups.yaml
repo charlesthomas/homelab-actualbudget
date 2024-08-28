@@ -13,5 +13,5 @@ spec:
     app: actualbudget
   name: actualbudget
   retain: 7
-  task: 
+  task: backup
 

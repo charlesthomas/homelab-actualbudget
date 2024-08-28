@@ -3,6 +3,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: actualbudget
+  namespace: actualbudget
   annotations:
     external-dns.alpha.kubernetes.io/hostname: ynab.crt.house
 spec:
