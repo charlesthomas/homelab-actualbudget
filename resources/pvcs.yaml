@@ -4,9 +4,13 @@ kind: PersistentVolumeClaim
 metadata:
   name: actualbudget
   namespace: actualbudget
+<<<<<<< before updating
   labels:
     recurring-job.longhorn.io/source: enabled
     recurring-job.longhorn.io/actualbudget: enabled
+=======
+  labels:recurring-job.longhorn.io/actualbudget=enabled
+>>>>>>> after updating
 spec:
   accessModes:
   - ReadWriteMany
