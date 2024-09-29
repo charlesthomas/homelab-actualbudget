@@ -30,6 +30,7 @@ spec:
           readinessProbe:
             tcpSocket:
               port: http
+          resources: {}
           volumeMounts:
             - mountPath: /data
               name: data
