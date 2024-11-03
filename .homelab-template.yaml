@@ -1,7 +1,7 @@
 _commit: v1.12.1-6-gbf0c0a5
 _src_path: /Users/crthomas/code/charlesthomas/homelab-template
 additionalResources: ''
-backups: true
+backups: false
 helm: false
 homepageDescription: ''
 homepageEnabled: true
@@ -26,7 +26,6 @@ pvcSize: 1Gi
 pvcStorageClass: nfs-critical
 reloader: false
 resources:
-- backups.yaml
 - deployments.yaml
 - ingresses.yaml
 - pvcs.yaml

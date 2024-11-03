@@ -8,7 +8,6 @@ commonLabels:
   app: actualbudget
 
 resources:
-- resources/backups.yaml
 - resources/deployments.yaml
 - resources/ingresses.yaml
 - resources/namespaces.yaml
