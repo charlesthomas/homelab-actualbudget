@@ -32,9 +32,15 @@ spec:
               port: http
           resources: {}
           volumeMounts:
+            - mountPath: /old
+              name: old
             - mountPath: /data
               name: data
       volumes:
       - name: data
         persistentVolumeClaim:
           claimName: actualbudget
+      - name: old
+        nfs:
+          path: /volume1/critical/k3s/actualbudget-actualbudget-pvc-b06b4034-4586-4cb7-b321-c12f0b577960
+          server: 192.168.1.21
