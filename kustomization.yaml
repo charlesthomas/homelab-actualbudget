@@ -17,7 +17,7 @@ resources:
 images:
   - name: actual-server
     newName: ghcr.io/actualbudget/actual-server
-    newTag: 24.11.0
+    newTag: 25.1.0
 patches:
 - patch: |-
     apiVersion: networking.k8s.io/v1
