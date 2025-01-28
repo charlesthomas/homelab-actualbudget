@@ -30,7 +30,7 @@ patches:
         gethomepage.dev/enabled: "true"
         gethomepage.dev/description: "YNAB Replacer"
         gethomepage.dev/group: Tools
-        gethomepage.dev/icon: actual
+        gethomepage.dev/icon: actual-budget
         gethomepage.dev/name: Actual Budget
         gethomepage.dev/pod-selector: ""
   target:

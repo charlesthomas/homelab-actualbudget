@@ -6,7 +6,7 @@ helm: false
 homepageDescription: 'YNAB Replacer'
 homepageEnabled: true
 homepageGroup: Tools
-homepageIcon: actual
+homepageIcon: actual-budget
 homepageName: Actual Budget
 ingClass: nginx-internal
 ingCname: ''
