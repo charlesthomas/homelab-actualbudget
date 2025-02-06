@@ -17,7 +17,7 @@ resources:
 images:
   - name: actual-server
     newName: ghcr.io/actualbudget/actual-server
-    newTag: 25.2.0
+    newTag: 25.2.1
 
 patches:
 - patch: |-
