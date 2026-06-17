@@ -30,7 +30,7 @@ patches:
         gethomepage.dev/href: https://ynab.crt.house
         gethomepage.dev/enabled: "true"
         gethomepage.dev/description: "YNAB Replacer"
-        gethomepage.dev/group: Tools
+        gethomepage.dev/group: Finances
         gethomepage.dev/icon: actual-budget
         gethomepage.dev/name: Actual Budget
         gethomepage.dev/pod-selector: ""
