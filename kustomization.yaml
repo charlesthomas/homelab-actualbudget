@@ -4,8 +4,10 @@ kind: Kustomization
 
 commonAnnotations:
   repo: https://github.com/charlesthomas/homelab-actualbudget
-commonLabels:
-  app: actualbudget
+labels:
+- includeSelectors: true
+  pairs:
+    app: actualbudget
 
 resources:
 - resources/deployments.yaml
@@ -36,3 +38,11 @@ patches:
         gethomepage.dev/pod-selector: ""
   target:
     kind: Ingress
+configMapGenerator:
+- name: grafana-dashboard-actualbudget
+  files:
+  - grafana/actualbudget.json
+  options:
+    disableNameSuffixHash: true
+    labels:
+      grafana_dashboard: "1"
