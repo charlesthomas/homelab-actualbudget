@@ -4,8 +4,10 @@ kind: Kustomization
 
 commonAnnotations:
   repo: https://github.com/charlesthomas/homelab-actualbudget
-commonLabels:
-  app: actualbudget
+labels:
+- includeSelectors: true
+  pairs:
+    app: actualbudget
 
 resources:
 - resources/deployments.yaml
